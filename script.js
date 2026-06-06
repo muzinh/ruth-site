@@ -77,3 +77,24 @@ modal.addEventListener("click", () => {
     modal.style.display = "none";
 
 });
+
+const naoBtn = document.getElementById("naoBtn");
+
+naoBtn.addEventListener("mouseover", () => {
+
+    const x = Math.random() * 300 - 150;
+
+    const y = Math.random() * 300 - 150;
+
+    naoBtn.style.transform =
+        `translate(${x}px, ${y}px)`;
+
+});
+
+document
+.getElementById("simBtn")
+.addEventListener("click", () => {
+
+    alert("Eu te amo ❤️");
+
+});
