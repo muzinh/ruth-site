@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 .hero{
@@ -55,9 +55,10 @@ body{
 }
 
 button{
+
     border:none;
 
-    padding:15px 40px;
+    padding:16px 42px;
 
     border-radius:50px;
 
@@ -65,11 +66,20 @@ button{
 
     font-size:1rem;
 
-    transition:0.3s;
+    font-weight:600;
+
+    transition:.3s;
+
+    background:white;
+
+    color:#111;
 }
 
 button:hover{
-    transform:scale(1.05);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
 }
 
 html{
@@ -96,8 +106,12 @@ html{
 }
 
 #tempo{
-    font-size:2rem;
-    font-weight:bold;
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    line-height:1.5;
 }
 
 .timeline{
@@ -285,21 +299,21 @@ html{
 
 .carta-container{
 
-    max-width:800px;
+    max-width:850px;
 
     margin:auto;
 
     background:#262626;
 
-    padding:50px;
+    padding:60px;
 
-    border-radius:20px;
+    border-radius:25px;
 
-    line-height:1.8;
+    line-height:2;
 
-    font-size:1.1rem;
+    font-size:1.15rem;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
 }
 
 .pergunta{
@@ -388,9 +402,11 @@ html{
 
 .final-content h2{
 
-    font-size:2.5rem;
+    font-size:3rem;
 
-    margin-bottom:20px;
+    margin-bottom:25px;
+
+    max-width:800px;
 }
 
 .final-content p{
