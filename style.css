@@ -71,3 +71,31 @@ button{
 button:hover{
     transform:scale(1.05);
 }
+
+html{
+    scroll-behavior:smooth;
+}
+
+.contador{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+}
+
+.contador h2{
+    margin-bottom:30px;
+}
+
+#tempo{
+    font-size:2rem;
+    font-weight:bold;
+}
