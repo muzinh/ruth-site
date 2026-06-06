@@ -95,6 +95,48 @@ document
 .getElementById("simBtn")
 .addEventListener("click", () => {
 
-    alert("Eu te amo ❤️");
+    document
+.getElementById("final")
+.scrollIntoView({
+    behavior:"smooth"
+});
+
+gerarCoracoes();
 
 });
+
+function gerarCoracoes(){
+
+    const container =
+    document.getElementById(
+        "hearts-container"
+    );
+
+    for(let i = 0; i < 100; i++){
+
+        const heart =
+        document.createElement("div");
+
+        heart.innerHTML = "❤️";
+
+        heart.classList.add("heart");
+
+        heart.style.left =
+            Math.random() * 100 + "vw";
+
+        heart.style.bottom = "-50px";
+
+        heart.style.animationDelay =
+            Math.random() * 2 + "s";
+
+        container.appendChild(heart);
+
+        setTimeout(() => {
+
+            heart.remove();
+
+        }, 5000);
+
+    }
+
+}

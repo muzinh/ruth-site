@@ -359,3 +359,68 @@ html{
 
     font-size:1rem;
 }
+
+.final{
+
+    min-height:100vh;
+
+    background:#0d0d0d;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.final-content h1{
+
+    font-size:5rem;
+
+    margin-bottom:20px;
+}
+
+.final-content h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+}
+
+.final-content p{
+
+    font-size:1.2rem;
+}
+
+.heart{
+
+    position:fixed;
+
+    font-size:24px;
+
+    pointer-events:none;
+
+    animation: subir 4s linear forwards;
+
+    z-index:9999;
+}
+
+@keyframes subir{
+
+    0%{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+    100%{
+        opacity:0;
+        transform:translateY(-800px);
+    }
+
+}
