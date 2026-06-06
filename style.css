@@ -424,3 +424,51 @@ html{
     }
 
 }
+
+.any-key-overlay{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.95);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    z-index:10000;
+}
+
+.any-key-content{
+
+    padding:20px;
+}
+
+.any-key-content h2{
+
+    font-size:4rem;
+}
+
+.any-key-content h1{
+
+    margin:20px 0;
+
+    font-size:3rem;
+}
+
+.any-key-content p{
+
+    opacity:.8;
+
+    font-size:1.2rem;
+}

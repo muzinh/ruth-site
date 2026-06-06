@@ -1,10 +1,34 @@
 const startBtn = document.getElementById("startBtn");
 
+const overlay =
+document.getElementById("anyKeyOverlay");
+
+const audio =
+document.getElementById("homerAudio");
+
 startBtn.addEventListener("click", () => {
 
-    document
-    .getElementById("contador")
-    .scrollIntoView();
+    audio.play();
+
+    overlay.style.display = "flex";
+
+});
+
+document.addEventListener("keydown", () => {
+
+    if(
+        overlay.style.display === "flex"
+    ){
+
+        overlay.style.display = "none";
+
+        document
+        .getElementById("contador")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+    }
 
 });
 
