@@ -1,6 +1,7 @@
-document.getElementById("startBtn")
+document
+.getElementById("startBtn")
 .addEventListener("click", () => {
 
-    alert("Bem-vinda ❤️");
+    alert("Nossa história está apenas começando ❤️");
 
 });
