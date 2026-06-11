@@ -8,9 +8,9 @@ document.getElementById("homerAudio");
 
 startBtn.addEventListener("click", () => {
 
-    audio.play();
-
     overlay.style.display = "flex";
+
+    iniciarTerminal();
 
 });
 
@@ -235,3 +235,40 @@ setTimeout(() => {
         .classList.add("pulse");
 
 }, 2000);
+
+function iniciarTerminal(){
+
+    const terminal =
+    document.getElementById("terminal");
+
+    terminal.innerHTML = "";
+
+    const linhas = [
+
+        "Inicializando sistema...",
+        "Carregando memórias...",
+        "Buscando fotos favoritas...",
+        "Comendo bis negão...",
+        "Pronto pra iniciar...",
+        "",
+        "Pra iniciar aperte qualquer tecla..."
+    ];
+
+    linhas.forEach((linha, index) => {
+
+        setTimeout(() => {
+
+            terminal.innerHTML +=
+                linha + "<br>";
+
+        }, index * 800);
+
+    });
+
+}
+
+setTimeout(() => {
+
+    audio.play();
+
+}, 6600);
