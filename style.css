@@ -504,3 +504,51 @@ html{
 
     transform:translateY(0);
 }
+
+.fade-title,
+.fade-text,
+.fade-button{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    animation-fill-mode:forwards;
+}
+
+.fade-title{
+
+    animation:heroFade .8s ease forwards;
+}
+
+.fade-text{
+
+    animation:heroFade .8s ease forwards;
+
+    animation-delay:.6s;
+}
+
+.fade-button{
+
+    animation:heroFade .8s ease forwards;
+
+    animation-delay:1.2s;
+}
+
+@keyframes heroFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+
+}
