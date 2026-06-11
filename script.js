@@ -188,3 +188,29 @@ elementos.forEach((elemento) => {
     observador.observe(elemento);
 
 });
+
+const cards =
+document.querySelectorAll(".hidden-card");
+
+const cardObserver =
+new IntersectionObserver((entries)=>{
+
+    entries.forEach((entry)=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add(
+                "show-card"
+            );
+
+        }
+
+    });
+
+});
+
+cards.forEach((card)=>{
+
+    cardObserver.observe(card);
+
+});
