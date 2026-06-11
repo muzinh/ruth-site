@@ -214,3 +214,24 @@ cards.forEach((card)=>{
     cardObserver.observe(card);
 
 });
+
+window.addEventListener("scroll", () => {
+
+    const hero =
+    document.querySelector(".hero");
+
+    const scrollY =
+    window.scrollY;
+
+    hero.style.backgroundPositionY =
+        `${scrollY * 0.4}px`;
+
+});
+
+setTimeout(() => {
+
+    document
+        .getElementById("startBtn")
+        .classList.add("pulse");
+
+}, 2000);
