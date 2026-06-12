@@ -247,7 +247,7 @@ function iniciarTerminal(){
 
         "Inicializando sistema...",
         "Carregando memórias...",
-        "Buscando fotos favoritas...",
+        "Esperando quinta do Shawarma...",
         "Comendo bis negão...",
         "Pronto pra iniciar...",
         "",
